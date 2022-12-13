@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li :hover {
+  cursor: pointer;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+ul li a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  width: 100%;
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mobile-nav-wrapper {
+  background-color: #414141;
+  left: 0;
+  right: 0;
+  height: 48px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dekstop-nav-wrapper {
+  display: none;
+}
+
+.header nav img {
+  width: 16px;
+}
+
+.header nav img:first-of-type {
+  filter: blur(5px);
+}
+
+.banner {
+  width: 100%;
+  margin: 48px auto 0;
+  text-align: center;
+}
+
+.banner .iphone14 {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .iphone14_wrapper h1 {
+  font-size: 42px;
+  margin: 20px 0 0;
+}
+
+.banner .iphone14_wrapper h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+.iphone14_links,
+.learn_more,
+.buy {
+  font-size: 16px;
+  display: flex;
+  column-gap: 10px;
+  margin: 5px 0;
+  align-items: center;
+  color: #0066cc;
+  justify-content: center;
+}
+
+.learn_more:hover,
+.buy :hover {
+  text-decoration: underline;
+}
+
+.iphone14_links img {
+  width: 20px;
+}
+
+.iphone_image_wrapper img {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.iphone14pro-section {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.iphone14pro-wrapper {
+  background-color: #000000;
+}
+
+.iphone14pro-wrapper h2 {
+  padding: 30px 0 15px;
+  font-size: 32px;
+  color: white;
+}
+
+.iphone14pro-wrapper h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  padding: 0 0 30px;
+}
+
+.iphone14pro-wrapper .iphone14_links img {
+  color: white;
+}
+
+.iphone14pro-hero {
+  width: 50%;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.iphone14pro-hero img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 30px 0;
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.quick-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+footer li {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.copyright {
+  padding: 10px 0 0;
+  border-top: 0.5px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch-container {
+  display: flex;
+  column-gap: 10px;
+  margin: 0 10px;
+}
+
+.watch-1-wrapper {
+  width: 50%;
+  padding: 3% 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  color: white;
+}
+
+.watch-1-wrapper h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.watch-1-wrapper p {
+  text-align: center;
+}
+
+.watch-1-wrapper span {
+  text-align: center;
+}
+
+.smart-watch-1-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.smart-watch-1-image img {
+  width: 100%;
+}
+
+/* Dekstop and Tablet View */
+@media screen and (min-width: 767px) {
+  .mobile-nav-wrapper {
+    display: none;
+  }
+  .dekstop-nav-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    background-color: #414141;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+  }
+  .dekstop-nav-wrapper ul {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .iphone14_links {
+    margin: 20px 0;
+  }
+
+  .iphone14pro-wrapper h2 {
+    padding: 40px 0 20px;
+    font-size: 32px;
+    color: white;
+  }
+
+  .iphone14pro-wrapper h3 {
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    padding: 0 0 30px;
+  }
+
+  .banner .iphone14_wrapper h1 {
+    font-size: 56px;
+    margin: 40px 0 0;
+  }
+
+  .banner .iphone14_wrapper h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+  }
+
+  .watch-1-wrapper {
+    padding: 50px 0 0;
+  }
+
+  .watch-1-wrapper h2 {
+    font-size: 36px;
+  }
+
+  .watch-1-wrapper p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .watch-1-wrapper span {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  footer li {
+    text-align: left;
+  }
+}
